@@ -42,6 +42,7 @@ namespace Calc
         {
             try
             {
+                double к = 0;
                 double a = Convert.ToDouble(textBox2.Text);
                 double b = Convert.ToDouble(textBox3.Text);
                 double R = 0;
@@ -51,7 +52,7 @@ namespace Calc
                 if (Operation == 3) { R = a * b; }
                 if (Operation == 4)
                 {
-                    if (b == 0) // Проверка деления на 0
+                    if (b == 0)
                     {
                         throw new DivideByZeroException("На ноль делить нельзя!");
                     }
