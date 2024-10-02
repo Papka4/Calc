@@ -10,7 +10,7 @@ namespace Calc
         private void button3_Click(object sender, EventArgs e)
         {
             Operation = 1;
-
+            //пупупум
             textBox1.Text = "-";
         }
 
@@ -21,6 +21,23 @@ namespace Calc
             textBox1.Text = "+";
         }
 
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+            Operation = 3;
+
+            textBox1.Text = "*";
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+            Operation = 4;
+
+            textBox1.Text = "/";
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             double a = Convert.ToDouble(textBox2.Text);
@@ -29,6 +46,8 @@ namespace Calc
 
             if (Operation == 1) { R = a - b; }
             if (Operation == 2) { R = a + b; }
+            if (Operation == 3) { R = a * b; }
+            if (Operation == 4) { R = a / b; }
 
             textBox1.Text = R.ToString();
         }
